@@ -129,7 +129,7 @@ namespace IngameScript
                 }
                 Airlocks.Add(airlock);
             }
-            if ((updateType & UpdateType.Update10) != 0)
+            if ((updateType & UpdateType.Update10) != 0 && Airlocks.Count() > 0)
             {
                 foreach(Airlock airlock in Airlocks)
                 {
